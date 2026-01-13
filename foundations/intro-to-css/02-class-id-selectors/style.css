@@ -1,1 +1,23 @@
 /* Add CSS Styling */
+body{
+  color:black;
+  background-color:white;
+  font: size 16px;
+}
+.odd-elements {
+  font-family:'Verdana', 'DejaVu Sans', 'sans-serif';
+  background-color: #f22952; /* Pinkish red color */
+}
+.cooler {
+  font-size: 24px;
+}
+#two{
+/* blue text and a font size of 36px */
+color:blue;
+font-size:36px;
+}
+#four{
+background-color:greenyellow;
+font-size:24px;
+font-weight: bold;
+}
