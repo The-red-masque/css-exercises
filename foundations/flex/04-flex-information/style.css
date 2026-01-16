@@ -6,10 +6,30 @@ img {
   width: 100px;
   height: 100px;
 }
+.title,
+.plant-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.plant-container {
+  align-items:center;
+  flex-flow: row wrap;
+}
+
+.plant {
+  display: inherit;
+  width: 200px;
+  margin: 52px;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+}
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin: 32px;
 }
 
 /* do not edit this footer */
