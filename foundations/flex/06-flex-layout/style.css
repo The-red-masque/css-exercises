@@ -8,12 +8,22 @@ body {
 }
 
 img {
+  display: inherit;
   width: 600px;
+}
+.input {
+  display: inherit;
+}
+.buttons {
+  display: inherit;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
 }
 
 button {
   font-family: Roboto, sans-serif;
-  border: none;
+  border: rounded;
   border-radius: 8px;
   background: #eee;
 }
@@ -23,4 +33,48 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.footer, .header {
+  display: inherit;
+  justify-content: space-between;
+  padding: 8px;
+  flex-direction: row;
+  flex: grow 0;
+}
+.footer {
+  background-color: #eee;
+}
+.content {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 5;
+}
+
+li {
+  list-style: none;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #696969;
+  text-decoration: none;
+}
+/* left and right links don't have the same amount of padding for some reason */
+.left-links, .right-links {
+  display: inherit;
+  align-items: space-around;
+  padding: 8px;
+  gap: 8px;
+}
+.left-links {
+  justify-content: left;
+}
+.right-links {
+  justify-content: right;
+}
+.container {
+  display: flex;
+  height:100%;
+  flex-direction:column;
 }
