@@ -6,7 +6,7 @@
 .container {
   text-align: center;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   gap: 4px;
 }
 
@@ -27,7 +27,7 @@
   justify-content: center;
   align-content: center;
 }
-/* Turn into inline somehow. */
+
 .menu ul,
 .menu li {
   display: grid;
@@ -35,13 +35,20 @@
   font-size: 16px;
   list-style-type: none;
 }
-/* Turn Header logo inline */
 .logo {
   display: grid;
   grid-row: 1 / 2;
 }
+/* Sidebar and Nav are not working how I am expecting it to. I am expecting sidebar to take up the column 1 spot and nav to take up the second column. */
 .sidebar {
+  display: inherit;
+  grid-column: 1 / 2;
+  /* grid-column: 1 / 2; */
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  /* gap: 1fr; */
   background-color: #c50208;
+  /* gap: 1fr; */
 }
 
 .sidebar .photo {
@@ -50,6 +57,7 @@
   font-size: 12px;
   font-weight: normal;
   border-radius: 10px;
+  /* gap: 1fr; */
 }
 
 .sidebar .side-content {
@@ -57,19 +65,27 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+  display: grid;
+  /* gap: 1fr; */
 }
 
 .nav {
   background-color: #c50208;
+  display: inherit;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-column: 2 / 3;
 }
 
 .nav ul li {
+  display: grid;
+  list-style-type: none;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .article {
   background-color: #bccbde;
+  grid: auto-fit;
 }
 
 .article p {
